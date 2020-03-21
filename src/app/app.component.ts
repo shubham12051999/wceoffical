@@ -11,6 +11,8 @@ export class AppComponent implements OnInit {
   }
   title = 'wce-angular';
   ngOnInit(){
+    // <app-home></app-home>
+    this.router.navigate(['Home'])
     
   } 
 }

@@ -53,7 +53,8 @@ nav{
                                             <h6 class="title">Study Abroad</h6>
                                             <div class="content">
                                                 <ul class="menu-col">
-                                                    <li><button class="navevent" (click)="getStudy('Overview')">Overview</button></li>
+                                                    <a routerLink="/StudyAbroad" data-hover="Home" class="navlinks mob-adj" style="color: black;">Overview<span></span></a>
+                                                    <!-- <li><button class="navevent" (click)="getStudy('Overview')">Overview</button></li> -->
                                                     <li><button class="navevent" (click)="getStudyAbroad('UK')">United Kingdom</button></li>
                                                     <li><button class="navevent" (click)="getStudyAbroad('France')">France</button></li>
                                                     <li><button class="navevent" (click)="getStudyAbroad('Singapore')">Singapore</button></li>
@@ -73,7 +74,8 @@ nav{
                                             <h6 class="title">Internship/Training</h6>
                                             <div class="content">
                                                 <ul class="menu-col">
-                                                    <li><button class="navevent" (click)="getInternship('Overview')">Overview</button></li>
+                                                    <!-- <li><button class="navevent" (click)="getInternship('Overview')">Overview</button></li> -->
+                                                    <a routerLink="/Internship" data-hover="Home" class="navlinks mob-adj" style="color: black;">Overview<span></span></a>
                                                     <li><button class="navevent" (click)="getInternship('Bali')">Bali</button></li>
                                                     <li><button class="navevent" (click)="getInternship('HongKong')">Hong Kong</button></li>
                                                     <li><button class="navevent" (click)="getInternship('Shanghai')">Shanghai</button></li>
@@ -86,7 +88,8 @@ nav{
                                             <h6 class="title">Study Tours</h6>
                                             <div class="content">
                                                 <ul class="menu-col">
-                                                    <li><button class="navevent" (click)="getStudy('Overview')">Overview</button></li>
+                                                    <!-- <li><button class="navevent" (click)="getStudy('Overview')">Overview</button></li> -->
+                                                    <a routerLink="/StudyTour" data-hover="Home" class="navlinks mob-adj" style="color: black;">Overview<span></span></a>
                                                     <li><button class="navevent" (click)="getStudy('Germany')">Germany</button></li>
                                                     <li><button class="navevent" (click)="getStudy('Singapore')">Singapore</button></li>
                                                     <li><button class="navevent" (click)="getStudy('UK')">United Kingdom</button></li>
@@ -104,7 +107,8 @@ nav{
                             <a routerLink="#" class="dropdown-toggle navlinks" data-toggle="dropdown" data-hover="Tests">Tests<span></span></a>
                             
                             <ul class="dropdown-menu animated">
-                                <li><button class="navevent" (click)="getTest('Overview')">Overview</button></li>
+                                <a routerLink="/Tests" data-hover="Home" class="navlinks mob-adj" style="color: black; ">Overview<span></span></a>
+                                <!-- <li><button class="navevent" (click)="getTest('Overview')">Overview</button></li> -->
                                 <li><button class="navevent" (click)="getTest('GRE')">GRE</button></li>
                                 <li><button class="navevent" (click)="getTest('GMAT')">GMAT</button></li>
                                 <li><button class="navevent" (click)="getTest('IELTS')">IELTS</button></li>
