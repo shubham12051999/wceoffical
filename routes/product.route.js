@@ -27,6 +27,22 @@ productRoutes.route('/ELab/:info').get(function(req,res){
   info=req.params.info;
   console.log(info);
 });
-// ELab/Elabprogram
+
+productRoutes.route('/Tests').get(function(req,res){
+  console.log('test overview');
+});
+
+productRoutes.route('/Internship').get(function(req,res){
+  console.log('inetrnship overview');
+});
+
+productRoutes.route('/StudyAbroad').get(function(req,res){
+  console.log('study abroad overview');
+});
+
+productRoutes.route('/StudyTour').get(function(req,res){
+  console.log('study tour city overview');
+});
+
 
 module.exports = productRoutes;  
