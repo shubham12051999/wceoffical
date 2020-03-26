@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "ngotiffin",
+  "private_key_id": "414b22b3ad82481c9b928d781afd53c4315fbefc",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCyAJzpCv8Zr4Vb\nGsaAiy+BpeTi1zBnaJjEovv885/D1PYFuBk/HBjjTb0C8cMooctCeE2hGn0dP77D\nicKRstXAkQ/QPRXe9A75IZd4Fbezd8OVmhj3dJ7Gw10pYfxATPtRZtTawYX8O9om\ndBmHpYlUg/qeF4SASX91CcegK450xd1mrJGZJDzGLfGScrDHIJDPER8PsCt9Bt1k\nlvgNafjyhAZlEacvCpH4LVBdghoj9QqOFczoWOAoYcwYWy4fR/NHJxf8GGPHSffb\nAb2nct+SAXFOyD6+X9dY6nloqR38IVHMFkaNS0LG/njJxbZ8Kt+c23YP5M9OMdg3\nDKHHZqZ/AgMBAAECggEACGdLAR2JyZalvxVWhb8McRx539O070za2X2wU9LUmhQ1\nwTNdzcLv0dtbrwXm5sYsqGixkYeEnJrj0KtyShqdSMgQbQ5VN/9hrZVOZ1bvI0Pm\nMevifdw9mriib0+27vozazZlmiZEwxG4TNRyWBsSjrDkZg5KLRxLLiVWDVPBF/Yj\nQ1Yd0gIZfureXYIITEMGzjIlLTUv0DqKPW+HBrEVXm6WfFoZpj5R76u3QXiNb7aK\nENLc7i28FW3w3faYf8+cYWoD9LNVa5q6hDJItwObuzUg1mvL1Uj0vKxKEGvGoiZn\n2ZQTOPAOd/wOUzRPHR4G7Ux/qWqWbdwaEH/7blNfgQKBgQDYR98i2FI6+pCSg2G/\nTFGNu6NAteePxGclgfEbUM5PGSlkBAxWMShVQFoKmwtiKojh5J8NymSn5uFjakML\nVbrcs+SBl4ETu/6PTHsLYRXCz0MaqLW0G+eH3ENUa22l3qF2/XCIIi5Lq6anSA8o\ntBbNjukmaHrf1ps5e4sMvW3I3wKBgQDSsSO34sAtEUCYcyZOdL3hDQ/tTC8fU9D+\nN48nL3F17YvfMs2MiWMh6SrmrM0wwP7LN7N/psCRWqcbaHiSyOFNbijTEMAtNyKG\nRFL9oIZBbhx+Zs5Xk61DRaDLkgNy/c51Xkqppj/uVTfa1bmr8ljoPlCOYOXk1tyg\nAaqgmOG2YQKBgFJhlfHM2g2TEWxtVNcr98h312g3oZtWYT+dLjyMW/kvCWAKVrSi\nBs3qNCHkCsL6lqcMkTUMiaiWvfVDLYRsxD962igukED3E7B7nkaoVUSd8958srGH\nC3rpgE/wl5Rdp70OLkX8VwwFtvXy8as8ZY8ox1AU7fDC6t9LWpygruebAoGATecB\ndfR5ajB+2d95wniX3KafxPXuVn7/P3/7hlmcciYrGZQHPHdwGBHGsxQhqm0xyKIH\n1KMrgJMsRo4SRvPPmnmozqHa7Nz9/vc0WGMKQRcdof8RPIB2B/GuypZqgBIoTG1Y\n3fGCofUQefGcfV9WUEj6MCrT1hE78k2rcUYV7wECgYEAlEyP3N6ooUekRgONTHqw\n6n92IHv5jxjTXh2y4f6F8j44wHT0/1O/wmiqLPPo0MtOkFXfCKsiH+VXyIsmLt1E\nISKXUujsdekaedpsdL6RK1dj2HK08B/45/abSmR5mkfUVwrIET8TuJXf4zJde83V\nUwOTr5Wjs2M8KOFDKYaNNWE=\n-----END PRIVATE KEY-----\n",
+  "client_email": "ngo-tiffin@ngotiffin.iam.gserviceaccount.com",
+  "client_id": "108125138840600603924",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ngo-tiffin%40ngotiffin.iam.gserviceaccount.com"
+}
