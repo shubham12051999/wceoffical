@@ -1,0 +1,56 @@
+.custcon {
+    font-family: 'Cairo';font-size: 22px;
+    background-color: antiquewhite;
+}
+
+.img-set{
+    padding-top: 2em;   
+    
+}
+
+
+.img-thumbnail{
+    border-radius: 30px;
+}
+
+.shadow{
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+
+/* .custcon{
+    background: rgba(0,0,0,.1);
+    
+} */
+
+.text-set{
+    padding-top: 3em;
+}
+
+p{
+    font-size: large;
+    text-align: justify;
+}
+
+.caption{
+    text-align: center;
+    font-family: 'Varela Round';font-size: 22px;
+}
+
+  .hrstyle{
+    width: 70%;
+    height: 3px;
+    background-color: indigo;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+  }
+
+  .card-body{
+    background: rgba(0,0,0,.1);
+    font-size: smaller;
+    text-align: justify;
+  }
+
+  .sub-content{
+    font-family: 'Cairo';font-size: 22px;
+    padding-top: 1em;
+  }
