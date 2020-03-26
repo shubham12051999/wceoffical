@@ -30,7 +30,7 @@ footer.font-small{
   }
   h6.text-uppercase.font-weight-bold.text-white{
     font-size: 15px;
-    margin-bottom: 4px;
+    margin-bottom: 7px;
     margin-top: 25px;
     font-weight: 600;
   }
@@ -47,6 +47,10 @@ footer.font-small{
   a.whitek{
     color: #fff;
   }
+  hr.purple.mb-4.mt-0.d-inline-block.mx-auto{
+    margin-bottom: 24px;
+  }
+
   @media (max-device-width: 768px) {
     .col-md-6.col-lg-7.text-center.text-md-right{
       padding-top: 8px;

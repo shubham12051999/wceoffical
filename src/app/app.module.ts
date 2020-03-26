@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {OwlModule} from 'ngx-owl-carousel';
+import { HttpClientModule } from '@angular/common/http'; 
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -28,6 +30,12 @@ import { CountriesComponent } from './home/countries/countries.component';
 import { TestimonialsComponent } from './home/testimonials/testimonials.component';
 import { EnquiryFormComponent } from './home/enquiry-form/enquiry-form.component';
 import { ElabsInfoComponent } from './elabs-info/elabs-info.component';
+import { OverviewComponent } from './study-tours/overview/overview.component';
+import { AboutGalleryComponent } from './about-gallery/about-gallery.component';
+import { AboutOurteamComponent } from './about-ourteam/about-ourteam.component';
+import { AboutTermsComponent } from './about-terms/about-terms.component';
+import { WceService } from "./wce.service";
+import { ElabLocationsComponent } from './elab-locations/elab-locations.component';
 
 @NgModule({
   declarations: [
@@ -52,14 +60,21 @@ import { ElabsInfoComponent } from './elabs-info/elabs-info.component';
     CountriesComponent,
     TestimonialsComponent,
     EnquiryFormComponent,
-    ElabsInfoComponent
+    ElabsInfoComponent,
+    OverviewComponent,
+    AboutGalleryComponent,
+    AboutOurteamComponent,
+    AboutTermsComponent,
+    ElabLocationsComponent
   ],
   imports: [
     BrowserModule,
+    OwlModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatTabsModule
+    MatTabsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

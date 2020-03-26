@@ -13,7 +13,11 @@ import { InternshipCityComponent } from "./internship-city/internship-city.compo
 import { StudyAbroadCityComponent } from "./study-abroad-city/study-abroad-city.component";
 import { TestsTypeComponent } from "./tests-type/tests-type.component";
 import { ElabsInfoComponent } from "./elabs-info/elabs-info.component";
-// import { componentFactoryName } from '@angular/compiler';
+import { AboutGalleryComponent } from "./about-gallery/about-gallery.component";
+import { AboutOurteamComponent } from "./about-ourteam/about-ourteam.component";
+import { AboutTermsComponent } from "./about-terms/about-terms.component";
+import { ElabLocationsComponent } from "./elab-locations/elab-locations.component";
+
 const routes: Routes = [
   {
     path : 'Home',
@@ -64,10 +68,25 @@ const routes: Routes = [
     component:TestsTypeComponent
   },
   {
-    path:'ELab/:info',
+    path:'ELab/Programs',
     component:ElabsInfoComponent
+  },
+  {
+    path:'ELab/Locations',
+    component:ElabLocationsComponent
+  },
+  {
+    path:'About/Gallery',
+    component:AboutGalleryComponent
+  },
+  {
+    path:'About/Terms',
+    component:AboutTermsComponent
+  },
+  {
+    path:'About/OurTeam',
+    component:AboutOurteamComponent
   }
-  
 
 ];
 
