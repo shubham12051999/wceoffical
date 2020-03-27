@@ -16,8 +16,8 @@ export class HeaderComponent implements OnInit {
   logo="../../assets/images/logo.png";
   constructor(private roter:Router,private http:HttpClient,private wce:WceService){}
   getStudyAbroad(data){
-    // this.hb.getcityStudyAbroad(data)
-    this.wce.getStudyAbroadHead(data)
+    this.hb.getcityStudyAbroad(data)
+    // this.wce.getStudyAbroadHead(data)
     this.roter.navigate(['StudyAbroad',data])
   }
 // getfile(){
@@ -31,13 +31,13 @@ export class HeaderComponent implements OnInit {
 
   }
   getStudy(scity){
-    // this.hc.getcityStudyTour(scity)
-    this.wce.getStudyHead(scity)
+    this.hc.getcityStudyTour(scity)
+    // this.wce.getStudyHead(scity)
     this.roter.navigate(['StudyTour',scity])
   }
   getTest(test){
-    // this.ha.gettype(test)
-    this.wce.getTestsHead(test)
+    this.ha.gettypes(test)
+    // this.wce.getTestsHead(test)
     this.roter.navigate(['Tests',test])
   }
   ngOnInit(): void {

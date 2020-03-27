@@ -15,16 +15,17 @@ export class WceService {
   constructor(private roter:Router,private http:HttpClient){}
   @Input()ha=new TestsTypeComponent(this.roter,this.http);hb=new StudyAbroadCityComponent(this.roter,this.http);hc=new StudyToursCityComponent(this.roter,this.http);hd=new InternshipCityComponent(this.roter,this.http);
   getTestsHead(test3){
-    this.http.get(`${this.uri}/Tests/${test3}`) 
     // this.http.get(`${this.uri}/Tests/${test3}`) 
-    .subscribe(function(res){
-      
-    });  
+    // // this.http.get(`${this.uri}/Tests/${test3}`) 
+    // .subscribe(function(res){
+      this.ha.gettypes(test3);
+    // });  
   }
   getStudyHead(test){
-    this.http.get(`${this.uri}/StudyTour/${test}`) 
-    .subscribe(function(res){
-    });  
+    // this.http.get(`${this.uri}/StudyTour/${test}`) 
+    // .subscribe(function(res){
+    // });  
+    this.hc.getcityStudyTour(test);
   }
 
   getInternshipHead(test1){
