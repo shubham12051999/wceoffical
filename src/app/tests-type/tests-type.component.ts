@@ -11,8 +11,8 @@ export class TestsTypeComponent implements OnInit {
 
   uri='http://localhost:4000'
   constructor(private roter:Router, private http: HttpClient) { }
-  gettype(test){
-    this.http.get(`${this.uri}/Tests/${test}`) .subscribe(function(res){console.log(res)});  
+  gettypes(test){
+    this.http.get(`${this.uri}/Test/${test}`) .subscribe(function(res){console.log(res)});  
   }
 
 

@@ -13,7 +13,6 @@ export class StudyToursCityComponent implements OnInit {
   constructor(private roter:Router, private http: HttpClient) { }
   getcityStudyTour(scity){
     this.http.get(`${this.uri}/StudyTour/${scity}`) .subscribe(function(res){console.log(res)});  
-
   }
 
   ngOnInit(): void {

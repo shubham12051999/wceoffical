@@ -17,7 +17,7 @@ export class TestsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-  
+    this.gettype();
   }
 
 }
