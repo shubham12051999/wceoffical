@@ -1,0 +1,133 @@
+h1 p h2 h3 h4 h5 {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  button.btn.btn-primary{
+    margin: 0 0 1% 38%;
+    width: 130px;
+  }
+  
+  .paralsec {
+    background-color: rgba(49, 64, 93, 0.85);
+    background-size: cover;
+    position: relative;
+    /*padding: 5% 10% 5% 10%;*/
+    padding-top: 5%;
+    padding-right: 10%;
+    padding-bottom: 0;
+    padding-left: 10%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 1000px;
+    margin-bottom: -11px;
+  }
+  
+  
+  
+  /* Add more images for more sections */
+  
+  
+  /* Remove Bottom Margin from Jumbotron */
+  
+  .about {
+    margin-bottom: 10px;
+    background-image: url(../../../assets/images/3.jpg);
+    min-height: 550px;
+    background-size: cover;
+    padding: 0;
+    background-attachment: fixed;
+    background-position: initial;
+    background-repeat: no-repeat;
+    /* background-position: 50% 50%; */
+  }
+  
+  .about-content {
+    font-family: 'Poppins', sans-serif;
+    width: 64%;
+    height: 600px;
+    margin: auto;
+    padding: 30px
+  }
+  
+  .contact-header {
+    color: #D8E3FB;
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  .contact-para {
+    color: #D8E3FB;
+    text-align: center;
+  }
+  
+  .container {
+    justify-content: center;
+  }
+  
+  .form-area {
+    padding: 2% 5% 10% 7%;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;    
+  }
+  
+  .form-control {
+    background-color: rgba(0, 0, 0, 0) !important;
+    border: white 1px solid;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: white;
+  }
+  
+  .form-control::-webkit-input-placeholder {
+    color: white;
+  }
+  
+  @media only screen and (max-device-width: 612px) {
+  
+    .paralsec {
+        background-color: rgba(49, 64, 93, 0.85);
+        background-size: cover;
+        position: relative;
+        padding: 10px 20px 20px 20px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-height: 1000px;
+    }button.btn.btn-primary{
+      margin: 0 0 1% 33%;
+      width: 130px;
+    }
+  
+  }
+  @media only screen and (max-device-width: 449px) {
+    button.btn.btn-primary{
+      margin: 0 0 1% 27%;
+      width: 130px;
+    }
+  
+  }
+  
+  @media (min-device-width: 992px) and (max-device-width: 1079px) {
+    .form-area {
+        padding: 2% 5% 10% 27%;
+    }
+  }
+  @media (min-device-width: 835px) and (max-device-width: 991px) {
+    .form-area {
+        padding: 2% 5% 10% 15%;
+    }
+  }
+  
+  @media (min-device-width: 1080px) and (max-device-width: 1400px) {
+    .form-area {
+        padding: 2% 5% 10% 27%;
+    }
+    .contact-header {
+      margin-left: -30px;
+    }
+  }
+  
+  
+  /* Footer */
