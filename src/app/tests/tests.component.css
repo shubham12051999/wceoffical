@@ -1,279 +1,300 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Sofia", sans-serif;
-    max-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Sofia", sans-serif;
+  max-height: 100%;
+ 
 
-  }
-   
-body{
-  width: 100% !important;
-  background-color: #bad0b8;
-  background-image: -webkit-linear-gradient(to left,  rgb(136, 67, 57), #FDA366);
-  background-image: -moz-linear-gradient(to left,  rgb(202, 97, 81), #FDA366);
-  background-image: -o-linear-gradient(to left, #FC7864, #FDA366);
-  background-image: -ms-linear-gradient(to left, #FC7864, #FDA366);
-  background-image: linear-gradient(to left, #FC7864, #FDA366);
-  transform: translateY(100px);
-  align-content: center;
+}
+ 
+/*body{
+width: 100% !important;
+background-color: #bad0b8;
+background-image: -webkit-linear-gradient(to left,  rgb(136, 67, 57), #FDA366);
+background-image: -moz-linear-gradient(to left,  rgb(202, 97, 81), #FDA366);
+background-image: -o-linear-gradient(to left, #FC7864, #FDA366);
+background-image: -ms-linear-gradient(to left, #FC7864, #FDA366);
+background-image: linear-gradient(to left, #FC7864, #FDA366);
+transform: translateY(100px);
+align-content: center;
+}*/
+
+
+h2 {
+  color: #0a4870;
+  font-weight: 500;
 }
 
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0 40px;
+}
+ul .booking-card {
   
-  h2 {
-    color: #0a4870;
-    font-weight: 500;
-  }
-  
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0 40px;
-  }
-  ul .booking-card {
-    
-    position: relative;
-    height: 500px;
-    width: 300px;
-    display: flex;
-    flex: 0 0 300px;
-    flex-direction: column;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    overflow: hidden;
-    background-position: center center;
-    background-size: cover;
-    text-align: center;
-    color: #2b3a44;
-    transition: 0.3s;
-    transform: translateY(300px);
-  }
+  position: relative;
+  height: 500px;
+  width: 300px;
+  display: flex;
+  flex: 0 0 300px;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  color: #2b3a44;
+  transition: 0.3s;
+  transform: translateY(300px);
+}
+ul .booking-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(10, 72, 112, 0);
+  transition: 0.3s;
+}
+ul .booking-card .book-container {
+  height: 200px;
+}
+ul .booking-card .book-container .content {
+  position: relative;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  transform: translateY(-200px);
+  transition: 0.3s;
+}
+ul .booking-card .book-container .content .btn {
+  border: 3px solid white;
+  padding: 10px 15px;
+  background: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+ul .booking-card .book-container .content .btn:hover {
+  background: white;
+  border: 0px solid white;
+  color: #0a4870;
+}
+ul .booking-card .informations-container {
+  flex: 1 0 auto;
+  padding: 20px;
+  background: #f0f0f0;
+  transform: translateY(206px);
+  transition: 0.3s;
+}
+ul .booking-card .informations-container .title {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+ul .booking-card .informations-container .title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  width: 50px;
+  margin: auto;
+  background: #0a4870;
+}
+ul .booking-card .informations-container .price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+ul .booking-card .informations-container .price .icon {
+  margin-right: 10px;
+}
+ul .booking-card .informations-container .more-information {
+  opacity: 0;
+  transition: 0.3s;
+}
+ul .booking-card .informations-container .more-information .info-and-date-container {
+  display: flex;
+}
+ul .booking-card .informations-container .more-information .info-and-date-container .box {
+  flex: 1 0;
+  padding: 15px;
+  margin-top: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: white;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+ul .booking-card .informations-container .more-information .info-and-date-container .box .icon {
+  margin-bottom: 5px;
+}
+ul .booking-card .informations-container .more-information .info-and-date-container .box.info {
+  color: #ec992c;
+  margin-right: 10px;
+}
+ul .booking-card .informations-container .more-information .disclaimer {
+  margin-top: 20px;
+  font-size: 0.8em;
+  color: #7d7d7d;
+}
+ul .booking-card:hover::before {
+  background: rgba(10, 72, 112, 0.6);
+}
+ul .booking-card:hover .book-container .content {
+  opacity: 1;
+  transform: translateY(0px);
+}
+ul .booking-card:hover .informations-container {
+  transform: translateY(0px);
+}
+ul .booking-card:hover .informations-container .more-information {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
   ul .booking-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(10, 72, 112, 0);
-    transition: 0.3s;
-  }
-  ul .booking-card .book-container {
-    height: 200px;
-  }
-  ul .booking-card .book-container .content {
-    position: relative;
-    opacity: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    transform: translateY(-200px);
-    transition: 0.3s;
-  }
-  ul .booking-card .book-container .content .btn {
-    border: 3px solid white;
-    padding: 10px 15px;
-    background: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1.3em;
-    color: white;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  ul .booking-card .book-container .content .btn:hover {
-    background: white;
-    border: 0px solid white;
-    color: #0a4870;
-  }
-  ul .booking-card .informations-container {
-    flex: 1 0 auto;
-    padding: 20px;
-    background: #f0f0f0;
-    transform: translateY(206px);
-    transition: 0.3s;
-  }
-  ul .booking-card .informations-container .title {
-    position: relative;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    font-weight: bold;
-    font-size: 1.2em;
-  }
-  ul .booking-card .informations-container .title::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    width: 50px;
-    margin: auto;
-    background: #0a4870;
-  }
-  ul .booking-card .informations-container .price {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  ul .booking-card .informations-container .price .icon {
-    margin-right: 10px;
-  }
-  ul .booking-card .informations-container .more-information {
-    opacity: 0;
-    transition: 0.3s;
-  }
-  ul .booking-card .informations-container .more-information .info-and-date-container {
-    display: flex;
-  }
-  ul .booking-card .informations-container .more-information .info-and-date-container .box {
-    flex: 1 0;
-    padding: 15px;
-    margin-top: 20px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    background: white;
-    font-weight: bold;
-    font-size: 0.9em;
-  }
-  ul .booking-card .informations-container .more-information .info-and-date-container .box .icon {
-    margin-bottom: 5px;
-  }
-  ul .booking-card .informations-container .more-information .info-and-date-container .box.info {
-    color: #ec992c;
-    margin-right: 10px;
-  }
-  ul .booking-card .informations-container .more-information .disclaimer {
-    margin-top: 20px;
-    font-size: 0.8em;
-    color: #7d7d7d;
-  }
-  ul .booking-card:hover::before {
     background: rgba(10, 72, 112, 0.6);
   }
-  ul .booking-card:hover .book-container .content {
+  ul .booking-card .book-container .content {
     opacity: 1;
     transform: translateY(0px);
   }
-  ul .booking-card:hover .informations-container {
+  ul .booking-card .informations-container {
     transform: translateY(0px);
   }
-  ul .booking-card:hover .informations-container .more-information {
+  ul .booking-card .informations-container .more-information {
     opacity: 1;
   }
+}
+.credits {
+  display: table;
+  background: #0a4870;
+  color: white;
+  line-height: 25px;
+  margin: 10px auto;
+  padding: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.credits a {
+  color: #e3ebf1;
+}
+
+h1 {
+  margin: 10px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.svg-wrapper {
+  height: 60px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  width: 320px;
+}
+
+.shape {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  stroke: #19f6e8;
+}
+
+.text {
+  color: rgb(39, 37, 37);
+  font-family: 'Roboto Condensed';
+  font-size: 50px;
+  letter-spacing: 8px;
+  line-height: 32px;
+  text-align: center;
+  position: relative;
+  top: -48px;
   
-  @media (max-width: 768px) {
-    ul .booking-card::before {
-      background: rgba(10, 72, 112, 0.6);
-    }
-    ul .booking-card .book-container .content {
-      opacity: 1;
-      transform: translateY(0px);
-    }
-    ul .booking-card .informations-container {
-      transform: translateY(0px);
-    }
-    ul .booking-card .informations-container .more-information {
-      opacity: 1;
-    }
-  }
-  .credits {
-    display: table;
-    background: #0a4870;
-    color: white;
-    line-height: 25px;
-    margin: 10px auto;
-    padding: 20px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    text-align: center;
-  }
-  .credits a {
-    color: #e3ebf1;
-  }
-  
-  h1 {
-    margin: 10px 20px;
-  }
-  
+}
 
-
-
-
-
-
-
-
-
-
-
-  .svg-wrapper {
-    height: 60px;
-    margin: 0 auto;
-    position: relative;
-    top: 50%;
-    width: 320px;
-  }
-  
-  .shape {
-    fill: transparent;
+@keyframes draw {
+  0% {
     stroke-dasharray: 140 540;
     stroke-dashoffset: -474;
     stroke-width: 8px;
-    stroke: #19f6e8;
   }
-  
-  .text {
-    color: rgb(39, 37, 37);
-    font-family: 'Roboto Condensed';
-    font-size: 50px;
-    letter-spacing: 8px;
-    line-height: 32px;
-    text-align: center;
-    position: relative;
-    top: -48px;
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
   }
-  
-  @keyframes draw {
-    0% {
-      stroke-dasharray: 140 540;
-      stroke-dashoffset: -474;
-      stroke-width: 8px;
-    }
-    100% {
-      stroke-dasharray: 760;
-      stroke-dashoffset: 0;
-      stroke-width: 2px;
-    }
-  }
-  
-  
-  .svg-wrapper:hover .shape {
-    -webkit-animation: 0.5s draw linear forwards;
-    animation: 0.5s draw linear forwards;
-  }
+}
+
+
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
 .discription{
-  color: rgb(2, 2, 2);
-  font-family: impact;
-  word-spacing: 4px;
-  font-size: 16px;
-  justify-content: center;
-  margin: 20px 90px -180px 90px;
-  line-height: 27px;
+
+color: rgb(2, 2, 2);
+font-family: impact;
+word-spacing: 4px;
+font-size: 16px;
+
+justify-content: center;
+margin: 20px 90px -180px 90px;
+line-height: 28px;
+transform: translateY(80px); 
+text-align: center; 
+border-radius: 10px;
+box-shadow: 5px 5px 15px rgba(94, 48, 10, 0.6);
+
+
+
 
 }
 
 @media (max-device-width: 340px){
-  html.dailyUI_001 {
-    width: 150%;
+html.dailyUI_001 {
+  width: 150%;
 }
 }
 
+.Full{
+width: 100%;
+align-content: center;
+background-image: -webkit-linear-gradient(to left,  rgb(65, 29, 24), rgb(150, 96, 61));
+background-image: -moz-linear-gradient(to left,  rgb(90, 32, 23), #FDA366);
+background-image: -o-linear-gradient(to left, #FC7864, #FDA366);
+background-image: -ms-linear-gradient(to left, #FC7864, #FDA366);
+background-image: linear-gradient(to left, #FC7864, #FDA366);
+
+}
