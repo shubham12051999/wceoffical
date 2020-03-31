@@ -1,0 +1,40 @@
+.header {
+    background-color: #c0392b;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    text-decoration: none;
+}
+
+.startTC{
+    /* font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif; */
+    font-family: 'Cairo';
+    font-size: 20px;
+}
+
+.line {
+    color: #c0392b;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.text {
+    text-align: justify;
+}
+
+.content {
+    font-size: 20px;
+}
+
+.sub-head {
+    text-align: center;
+    color: #c0392b;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    padding-top: 20px;
+}
