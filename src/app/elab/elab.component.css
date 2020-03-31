@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+video{
+    margin-left: 20%;
+    height: 60%;
+    width: 60%;
+}
+@keyframes halloween {
+  0% {
+    filter: invert(0);
+  }
+  20% {
+    filter: invert(1);
+  }
+  40% {
+    filter: invert(0);
+  }
+  60% {
+    filter: invert(1);
+  }
+  80% {
+    filter: invert(0);
+  }
+  100% {
+    filter: invert(1);
+  }
+}
+#page-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 16px;
+  margin: 0 0 15px 0;
+}
+
+.link-main {
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin: 30px auto 20px auto;
+  background: linear-gradient(45deg, #5c00a8, red);
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 20px 15px;
+  border-radius: 50px;
+  transition: all 0.4s ease;
+  background-size: 100%;
+  position: relative;
+}
+.link-main:hover {
+  background-size: 500%;
+}
+.link-main:hover svg {
+  margin-left: 20px;
+  transform: scale(1);
+  opacity: 1;
+}
+.link-main svg {
+  margin-left: 10px;
+  top: 3px;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.8);
+  opacity: 0.5;
+  transform-origin: center;
+}
+.link-main.small {
+  width: 34px;
+}
+.link-main.small svg {
+  margin: 0;
+}
+
+.content {
+  background: white;
+  border-radius: 15px;
+  padding: 40px;
+}
+.content .block {
+  padding: 0 15px 40px 15px;
+}
+
+@media only screen and (max-width: 992px) {
+  elab {
+    padding: 20px 10px;
+  }
+}
+.content {
+  animation: fadeIn 0.7s forwards 0.7s;
+  animation-fill-mode: both;
+}
+.content .column-2 {
+  display: grid;
+}
+.content .column-2 .block {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+.content .column-2.left {
+  grid-template-columns: 60% 40%;
+}
+.content .column-2.right {
+  grid-template-columns: 40% 60%;
+}
+
+@media only screen and (max-width: 992px) {
+  .column-2 {
+    grid-template-columns: 1fr !important;
+  }
+  .content {
+    padding: 0;
+}
+video {
+margin-left: 0;
+width: 100%;
+height: 100%;
+}
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    position: relative;
+    top: -5px;
+  }
+  to {
+    opacity: 1;
+    position: relative;
+    top: 0;
+  }
+}
+
+
+.content5 {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 760px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    color: #101010;
+  }
+  
+  .parastyle {
+    margin: 0 0 20px;
+  }
+  
+  
+  /* HEADING STYLES */
+  .headstyle {
+    position: relative; /* This is important */
+    margin: 1.5em 0 .9em;
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden; /* This is important */
+  }
+  
+  /* Create two pseudo-elements */
+  .headstyle:before, .headstyle:after {
+    position: absolute;
+    top: 50%;
+    content: '';
+    width: 50%;
+    height: 2px;
+    display: inline-block;
+    background: #303030;
+  }
+  
+  /* Adjust the "14px" value to change the text's left padding */
+  .headstyle:before {
+    margin-left: calc(-50% - 14px);
+  }
+  
+  /* Adjust the "14px" value to change the text's right padding */
+  .headstyle:after {
+    margin-left: 14px;
+  }
+  
+  
+  /* UNIMPORTANT RESPONSIVE STYLES */
+  @media screen and (max-width: 600px) {
+    .headstyle {
+      font-size: 24px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .headstyle {
+      font-size: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .headstyle {
+      font-size: 15px;
+    }
+  }
+  @media screen and (max-width: 476px) {
+    div#elab{
+      padding: 30px 40px !important;
+    }
+  }
+

@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "wisdomcareeareducationpvt",
+    "public": "dist/wce-angular",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

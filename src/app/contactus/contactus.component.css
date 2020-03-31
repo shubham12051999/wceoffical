@@ -1,0 +1,287 @@
+* {
+	margin:0px;
+	padding:0px;
+}
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing: border-box; }
+
+.clearfix:before, .clearfix:after { display: table; content: ''; }
+.clearfix:after { clear: both; }
+
+
+body {
+	background: #ffffff;
+	color: #333;
+	font-weight: normal;
+	font-size: 1em;
+	font-family: 'Roboto', Arial, sans-serif;
+}
+
+input:focus, textarea:focus, keygen:focus, select:focus {
+	outline: none;
+}
+::-moz-placeholder {
+	color: #666;
+	font-weight: 300;
+	opacity: 1;
+}
+
+::-webkit-input-placeholder {
+	color: #666;
+	font-weight: 300;
+}
+
+
+/* Contact Form Styling */
+.container {
+	padding: 0 50px 70px;
+}
+.textcenter {
+    text-align: center;
+    
+
+    
+}
+.section1 {
+	text-align: center;
+	display: table;
+	width: 100%;
+}
+.section1 .shtext {
+    padding: 200px 0px;
+    letter-spacing: 2px;
+    display: block;
+    margin-top: 20px;
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+    background-image: url(../../assets/images/rebe-adelaida-zunQwMy5B6M-unsplash.jpg);
+    background-size: cover;
+}
+.section1 .seperator {
+	border-bottom:1px solid #282f74;
+    width: 300px;
+	display: inline-block;
+	margin: 20px;
+}
+
+.section1 h1 {
+	font-size: 40px;
+	color: rgb(32, 26, 83);
+	font-weight: normal;
+}
+
+.section2 {
+    width: 1200px;
+    margin: 25px auto;
+}
+.section2 .col2 {
+	width: 48.71%;
+}
+.section2 .col2.first {
+	float: left;
+}
+.section2 .col2.last {
+	float: right;
+}
+.section2 .col2.column2 {
+	padding: 0 30px;
+}
+.section2 span.collig {
+	color: #a2a2a2;
+	margin-right: 10px;
+	display: inline-block;
+}
+.section2 .sec2addr {
+	display: block;
+	line-height: 26px;
+}
+.section2 .sec2addr p:first-child {
+	margin-bottom: 10px;
+}
+.section2 .sec2contactform input[type="text"], 
+.section2 .sec2contactform input[type="email"],
+.section2 .sec2contactform textarea {
+    padding: 18px;
+    border: 0;
+    background: #EDEDED;
+    margin: 7px 0;
+}
+.section2 .sec2contactform textarea {
+	width: 100%;
+	display: block;
+	color: #666;
+  resize:none;
+}
+.section2 .sec2contactform input[type="submit"] {
+	padding: 15px 40px;
+    color: #fff;
+    border: 0;
+    background: #A44DD8;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 7px 0;
+    cursor: pointer;
+}
+.section2 .sec2contactform h3 {
+	font-weight: normal;
+    margin: 20px 0;
+    margin-top: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 19px;
+    color: #A44DD8;
+}
+
+
+/* @media querries */
+
+@media only screen and (max-width: 1266px) {
+	.section2 {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 960px) {
+	.container {
+		padding: 0 30px 70px;
+	}
+	.section2 .col2 {
+		width: 100%;
+		display: block;
+	}
+	.section2 .col2.first {
+		margin-bottom: 10px;
+	}
+	.section2 .col2.column2 {
+		padding: 0;
+	}
+	body .sec2map {
+		height: 250px !important;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.section2 .sec2addr {
+		font-size: 14px;
+	}
+	.section2 .sec2contactform h3 {
+		font-size: 16px;
+	}
+	.section2 .sec2contactform input[type="text"], .section2 .sec2contactform input[type="email"], .section2 .sec2contactform textarea {
+		padding: 10px;
+		margin:3px 0;
+	}
+	.section2 .sec2contactform input[type="submit"] {
+		padding: 10px 30px;
+		font-size: 14px;
+  }
+  
+  .row {
+    margin-left: -5%;
+  }
+  .shtext h1{
+    color: #ddd;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .col-md-6.col-lg-4.pb-3{
+    margin-left: 5%;
+    margin-right: 2%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .card.card-custom.bg-white.border-white.border-0{
+    margin-bottom: 3%;
+  }
+}
+@media only screen and (max-width: 415px) {
+  .card.card-custom.bg-white.border-white.border-0{
+    height: 500px !important;
+    width: 280px !important;
+  }
+}
+
+
+h2.card-title , h5.address{
+  margin: 10px 0;
+}
+h5.address{
+  font-size: 20px;
+}
+Address ,span.form-i
+{
+  font-size: 18px;
+}
+.card-body {
+  margin-left: 20px;
+}
+
+
+
+      .Maps{
+        overflow: hidden;
+        width: 100%;
+        height: 550px;
+      }
+
+      .card-custom {
+        overflow: hidden;
+        min-height: 450px;
+        box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+      }
+      
+      .card-custom-img {
+        height: 200px;
+        min-height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-color: inherit;
+      }
+      
+      /* First border-left-width setting is a fallback */
+      .card-custom-img::after {
+        position: absolute;
+        top: 161px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-top-width: 40px;
+        border-right-width: 0;
+        border-bottom-width: 0;
+        border-left-width: 545px;
+        border-left-width: calc(575px - 5vw);
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: inherit;
+      }
+      
+      .card-custom-avatar img {
+        border-radius: 50%;
+        box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+        position: absolute;
+        top: 100px;
+        left: 1.25rem;
+        width: 100px;
+        height: 100px;
+        
+      }
+      .container {
+        font-size: 14px;
+        color: #666666;
+        font-family: "Open Sans";
+        width: 100%;
+      }
+      .row{
+        width: 100%;
+      }
+      .class-body h4{
+        color: #0e112b;
+        text-decoration: underline;
+      }
+      
+      .col-md-6.col-lg-4.pb-3{
+        margin-left: 10%;
+        margin-right: 5%;
+      }

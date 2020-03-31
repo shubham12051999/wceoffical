@@ -1,0 +1,188 @@
+<style>li.logo-after{visibility:hidden;display:none}nav.navbar.bootsnav{border:0;background:0;margin-bottom:40px;margin-left:20px}nav.navbar.bootsnav ul.nav>li{margin-right:20px}nav.navbar.bootsnav ul.nav>li>a{padding:10px 15px;margin-top:15px;border-radius:0;font-size:15px;font-weight:600;color:#2a1f30;text-transform:uppercase;position:relative;transition:all .5s ease 0s}nav.navbar.bootsnav ul.nav>li.dropdown>a{margin-top: 15px;}nav.navbar.bootsnav ul.nav>li.active>a,nav.navbar.bootsnav ul.nav>li.active>a:hover,nav.navbar.bootsnav ul.nav>li>a:hover,nav.navbar.bootsnav ul.nav>li.on>a{color:#000058}nav.navbar.bootsnav ul.nav>li>a>span:before,nav.navbar.bootsnav ul.nav>li>a>span:after{content:"";width:100%;height:100%;background:#d3d3d3;opacity:0;position:absolute;top:50%;left:50%;z-index:-1;transform:translateX(-50%) translateY(-50%) rotate(-45deg);transition:all .4s ease 0s}nav.navbar.bootsnav ul.nav>li>a>span:after{width:50px;background-color:#d3d3d3}nav.navbar.bootsnav ul.nav>li:hover>a>span:before,nav.navbar.bootsnav ul.nav>li.active>a>span:before{transform:translateX(-50%) translateY(-50%) rotate(0);opacity:1}nav.navbar.bootsnav ul.nav>li:hover>a>span:after,nav.navbar.bootsnav ul.nav>li.active>a>span:after{transform:translateX(-50%) translateY(-50%) rotate(0);opacity:1;width:0}nav.navbar.bootsnav ul.nav>li.dropdown>a.dropdown-toggle:after{position:absolute;top:10px;right:10px;margin:0 0 0 7px}nav.navbar.bootsnav ul.nav>li.dropdown>ul{top:100%;transition:all .8s ease 0s}nav.navbar.bootsnav ul.nav>li.dropdown.on>ul{top:140%}nav.navbar.bootsnav li.dropdown ul.dropdown-menu{box-shadow:0 0 10px rgba(0,0,0,0.3);border:0;border-radius:10px}nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content li{font-size:14px}nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{font-size:16px;font-weight:bold;color:#000058}@media(min-width:480px) and (max-width:640px){nav.bootsnav.navbar-full ul.nav{padding-top:30px;padding-bottom:30px}i.fa.fa-times{margin-top:60px;margin-left:60%}}@media only screen and (max-width:990px){nav.navbar.bootsnav .navbar-toggle{background:transparent!important;color:#2a1f30}nav.navbar.bootsnav ul.nav>li{width:75%;margin:5px auto 15px}nav.navbar.bootsnav.navbar-mobile ul.nav>li>a{text-align:center;color:#2a1f30;border:0}nav.navbar.bootsnav ul.nav>li.active>a,nav.navbar.bootsnav ul.nav>li>a,nav.navbar.bootsnav ul.nav>li>a:hover,nav.navbar.bootsnav ul.nav>li.on>a{color:#000058}nav.navbar.bootsnav.navbar-mobile .navbar-collapse{background-color:whitesmoke;color: #2a1f30;}nav.navbar.bootsnav ul.nav li.dropdown ul.dropdown-menu>li>a{color:#2a1f30;border-bottom-color:none}nav.navbar.bootsnav ul.nav>li.dropdown>ul{top:100%}nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title,nav.navbar.bootsnav.navbar-mobile ul.nav ul.dropdown-menu .col-menu ul.menu-col li a{font-size:14px;font-weight:normal;color:#2a1f30}a.navlinks.mob-adj{padding-right:50px!important}img.logo2{display:block;margin-left:55px}li.logo-after{visibility:visible;text-align:center;display:inline-block;margin-top:2em;margin-left:8em}i.fa.fa-times{margin-top:50px;margin-left:60%}}</style>
+<style>
+    .navevent{
+    background-color: transparent; 
+    border: none;
+    /* color: wheat; */
+}
+nav{
+    height: 40px;
+}
+.navbar-nav{
+    float: left !important;
+    margin-top: 12px !important;
+}
+
+
+</style>
+
+<div class="headersize" >
+<div class="container" >
+    <div class="row">
+        <div class="col-md-12" >
+  <!-- background-color:rgb(18, 24, 34) -->
+  <nav class="navbar  navbar-default navbar-mobile bootsnav on" >
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                    <i class="fa fa-bars"></i>
+                    <li class="logo-after">
+                        <img src="{{logo}}"  class="logo">
+                    </li>   
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    
+                    <ul class="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li>
+                            <img src="{{logo}}" alt="" class="logo logo2">
+                        </li>
+                        <li>
+                           <a routerLink="" data-hover="Home" class="navlinks mob-adj">Home<span></span></a>
+                        </li>
+                        
+                        <li class="dropdown">
+                            <a routerLink="" class="dropdown-toggle navlinks" data-toggle="dropdown" data-hover="About">About WCE<span></span></a>
+                            
+                            <ul class="dropdown-menu animated">
+                                <!-- <li><button class="navevent" (click)="AboutusTab('Aboutus')">About Us</button></li> -->
+                                <!-- <li><button class="navevent" (click)="AboutusTab('tandc')">Terms and Conditions</button></li> -->
+                                <!-- <li><button class="navevent" (click)="AboutusTab('gallery')">Gallery</button></li> -->
+                                <li>
+                                    <a routerLink="/About/Gallery"  class="navlinks mob-adj">Gallery</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/About/Terms"  class="navlinks mob-adj">Terms and Conditions</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/About/OurTeam"  class="navlinks mob-adj">Our Teams</a>
+                                </li>
+                                
+                                <!-- <li><button class="navevent" (click)="AboutusTab('ourteam')">Our Team</button></li> -->
+                            </ul>
+                        </li>
+                        
+                        <li class="dropdown megamenu-fw">
+                            <a routerLink="" class="dropdown-toggle navlinks" data-toggle="dropdown">Study<span></span></a>
+                            <ul class="dropdown-menu megamenu-content animated" role="menu">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-menu col-md-4">
+                                            <h6 class="title">Study Abroad</h6>
+                                            <div class="content">
+                                                <ul class="menu-col">
+                                                    <li><a routerLink="/StudyAbroad" data-hover="Home" class="navlinks mob-adj mob-adj2" style="background: transparent;border: transparent;margin-left: 5px;color: #201b1b;">Overview<span></span></a></li>
+                                                    <!-- <li><button class="navevent" (click)="getStudy('Overview')">Overview</button></li> -->
+                                                    <li><button class="navevent" (click)="getStudyAbroad('UK')">United Kingdom</button></li>
+                                                    <li><button class="navevent" (click)="getStudyAbroad('France')">France</button></li>
+                                                    <li><button class="navevent" (click)="getStudyAbroad('Singapore')">Singapore</button></li>
+                                                    <li><button class="navevent" (click)="getStudyAbroad('NewZeland')">New Zealand</button></li>
+                                                    <li><button class="navevent" (click)="getStudyAbroad('Canada')">Canada</button></li>
+                                                    <li><button class="navevent" (click)="getStudyAbroad('Malaysia')">Malaysia</button></li>
+                                                    <li><button class="navevent" (click)="getStudyAbroad('USA')">United States Of America</button></li>
+                                                    <li><button class="navevent" (click)="getStudyAbroad('Australia')">Australia</button></li>
+                                                    <li><button class="navevent" (click)="getStudyAbroad('Germany')">Germany</button></li>
+                                                    <li><button class="navevent" (click)="getStudyAbroad('Ireland')">Ireland</button></li>
+                                                    <li><button class="navevent" (click)="getStudy('Italy')">Italy</button></li>
+                                                        
+                                                </ul>
+                                            </div>
+                                        </div><!-- end col-3 -->
+                                        <div class="col-menu col-md-4">
+                                            <h6 class="title">Internship/Training</h6>
+                                            <div class="content">
+                                                <ul class="menu-col">
+                                                    <!-- <li><button class="navevent" (click)="getInternship('Overview')">Overview</button></li> -->
+                                                    <li><a routerLink="/Internship" data-hover="Home" class="navlinks mob-adj mob-adj2" style="background: transparent;border: transparent;margin-left: 5px;color: #201b1b;">Overview<span></span></a></li>
+                                                    <li><button class="navevent" (click)="getInternship('Bali')">Bali</button></li>
+                                                    <li><button class="navevent" (click)="getInternship('HongKong')">Hong Kong</button></li>
+                                                    <li><button class="navevent" (click)="getInternship('Shanghai')">Shanghai</button></li>
+                                                    <li><button class="navevent" (click)="getInternship('Malaysia')">Malaysia</button></li>
+                                                    <li><button class="navevent" (click)="getInternship('USA')">USA</button></li>
+                                                </ul>
+                                            </div>
+                                        </div><!-- end col-3 -->
+                                        <div class="col-menu col-md-4">
+                                            <h6 class="title">Study Tours</h6>
+                                            <div class="content">
+                                                <ul class="menu-col">
+                                                    <!-- <li><button class="navevent" (click)="getStudy('Overview')">Overview</button></li> -->
+                                                    <li><a routerLink="/StudyTour" data-hover="Home" class="navlinks mob-adj mob-adj2" style="background: transparent;border: transparent;margin-left: 5px;color: #201b1b;">Overview<span></span></a></li>
+                                                    <li><button class="navevent" (click)="getStudy('Germany')">Germany</button></li>
+                                                    <li><button class="navevent" (click)="getStudy('Singapore')">Singapore</button></li>
+                                                    <li><button class="navevent" (click)="getStudy('UK')">United Kingdom</button></li>
+                                                    <li><button class="navevent" (click)="getStudy('USA')">USA</button></li>
+                                                    <li><button class="navevent" (click)="getStudy('HongKong')">Hong Kong</button></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div><!-- end row -->
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="dropdown">
+                            <a routerLink="#" class="dropdown-toggle navlinks" data-toggle="dropdown" data-hover="Tests">Tests<span></span></a>
+                            
+                            <ul class="dropdown-menu animated">
+                                <!-- <li>
+                                    <a routerLink="/Tests"  class="navlinks mob-adj">Overview</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/Tests/GRE"  class="navlinks mob-adj">GRE</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/Tests/GMAT"  class="navlinks mob-adj">GMAT</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/Tests/IELTS"  class="navlinks mob-adj">IELTS</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/Tests/TOEFL"  class="navlinks mob-adj">TOEFL</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/Tests/OET"  class="navlinks mob-adj">OET</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/Tests/SAT"  class="navlinks mob-adj">SAT</a>
+                                </li> -->
+                                 <li><button routerLink="/Tests" data-hover="Home" class="navlinks mob-adj" style="background: transparent;border: transparent;border-bottom: solid 0.5px #e0e0e0;">Overview<span></span></button></li>
+                            
+                                <li><button class="navevent" (click)="getTest('GRE')">GRE</button></li>
+                                <li><button class="navevent" (click)="getTest('GMAT')">GMAT</button></li>
+                                <li><button class="navevent" (click)="getTest('IELTS')">IELTS</button></li>
+                                <li><button class="navevent" (click)="getTest('TOEFL')">TOEFL</button></li>
+                                <li><button class="navevent" (click)="getTest('OET')">OET</button></li>
+                                <li><button class="navevent" (click)="getTest('SAT')">SAT</button></li>
+                            </ul>
+                        </li>
+    
+                        <li class="dropdown">
+                            <a routerLink="#" class="dropdown-toggle navlinks" data-toggle="dropdown" data-hover="eLab">eLab USA<span></span></a>
+                            
+                            <ul class="dropdown-menu animated">
+                                <li>
+                                    <a routerLink="/ELab"  class="navlinks mob-adj">About eLab</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/ELab/Programs"  class="navlinks mob-adj">eLab Programs</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/ELab/Locations"  class="navlinks mob-adj">eLab Locations</a>
+                                </li>
+                                <!-- <li><button class="navevent" (click)="Elabs('AboutElab')">About eLab</button></li>
+                                <li><button class="navevent" (click)="Elabs('Elabprogram')">eLab Programs</button></li>
+                                <li><button class="navevent" (click)="Elabs('ElabLocation')">eLab Locations</button></li> -->
+                            </ul>
+                        </li>
+    
+    
+                        <li><a routerLink="/FAQS" data-hover="FAQS" class="navlinks mob-adj">FAQS<span></span></a></li>
+    
+                        <li><a routerLink="/Contact" data-hover="Contact" class="navlinks mob-adj">Contact Us<span></span></a></li>
+                    </ul>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+    </div>
+</div>
+
