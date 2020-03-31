@@ -1,4 +1,9 @@
-
+.startTT     {
+    /* background: #e74c3c; */
+    background-color: #c0392b;
+    font-family: 'Cairo';
+    font-size: 22px;
+}
 
 .box-vessel{
     /* padding-top: 1em;
@@ -7,11 +12,13 @@
 }
 
 .box{
-    background-color: #1b141f;
+    background-color: whitesmoke;
     /* background-color: antiquewhite; */
-    border-radius: 20px;
-    animation: fadeIn 0.5s forwards 0.5s;
-    animation-fill-mode: both;
+    border-radius: 5px;
+    /* animation: fadeIn 0.5s forwards 0.5s;
+    animation-fill-mode: both; */
+    /* opacity: 0.5; */
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
 }
 
 .box-pad{
@@ -19,8 +26,42 @@
     padding: 50px;
 }
 
-.just{
+.header {
+    background-color: #c0392b;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.text {
     text-align: justify;
+}
+
+.sub-head {
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+}
+
+.animate1 {
+    animation: fadeIn 0.3s forwards 0.3s;
+    animation-fill-mode: both;
+}
+
+.animate2 {
+    animation: fadeIn 0.5s forwards 0.5s;
+    animation-fill-mode: both;
+}
+
+.animate3 {
+    animation: fadeIn 0.7s forwards 0.7s;
+    animation-fill-mode: both;
+}
+
+.animate4 {
+    animation: fadeIn 0.9s forwards 0.9s;
+    animation-fill-mode: both;
 }
 
 @keyframes fadeIn {
@@ -35,4 +76,3 @@
       top: 0;
     }
   }
-

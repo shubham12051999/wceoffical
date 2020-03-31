@@ -193,6 +193,13 @@ input:focus, textarea:focus, keygen:focus, select:focus {
     margin-bottom: 3%;
   }
 }
+@media only screen and (max-width: 415px) {
+  .card.card-custom.bg-white.border-white.border-0{
+    height: 500px !important;
+    width: 280px !important;
+  }
+}
+
 
 h2.card-title , h5.address{
   margin: 10px 0;
